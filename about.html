@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Orchestra</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+      <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+   </head>
+
+   <body>
+      <header>
+         <figure>
+            <a href="index.html"><img src="images/itunes.svg" alt="Logo"></a>
+         </figure>
+         <nav>
+            <ul>
+               <li><a href="index.html">home</a></li>
+               <li><a href="about.html">sobre</a></li>
+               <li><a href="contato.html">contato</a></li>
+            </ul>
+         </nav>
+         <span id="burguer"class="material-icons" onclick="clickMenu()">menu</span>
+      </header>
+
+      <nav id="items">
+         <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">sobre</a></li>
+            <li><a href="contato.html">contato</a></li>
+         </ul>
+      </nav>
+
+      <main>
+         <article>
+               <h2>História e Curiosidades</h2>
+               <p>Para saber mais de como surgiu a orquestra sinfonica e outras curiosidades, veja o video em abaixo:</p>
+               <div>
+                  <video width="320" height="240" controls>
+                     <source src="./video/movie.mp4" type="video/mp4">
+                  </video>
+               </div>
+         </article>
+
+      </main>
+
+      <footer>
+         <nav>
+            <ul>
+               <li><a href="https://twitter.com/?lang=pt-br"><img src="images/twitter-96.png"></a></li>
+               <li><a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="images/facebook-100.png"></a></li>
+               <li><a href="https://about.instagram.com/pt-br"><img src="images/instagram-100.png"></a></li>
+               <li><a href="https://www.youtube.com/"><img src="images/youtube-96.png"></a></li>
+               <li><a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419"><img src="images/google-plus-96.png"></a></li>
+            </ul>
+         </nav>
+         <figure>
+            <img src="images/telefone-100.png">
+            <figcaption>+55 (31) 3219-0021</figcaption>
+         </figure>
+         <figure>
+            <img src="images/envelope-100.png">
+            <span>contato@email.art.br</span>
+         </figure>
+         <figure>
+            <img src="images/gps-100.png">
+            <figcaption>Sala Rio grande do Sul - Rua Tenente Couto, 1090 - RS</figcaption>
+         </figure>
+      </footer>
+
+      <script>
+            function clickMenu() {
+               if (items.style.display == 'block') {
+                  items.style.display = 'none'
+               } else {
+                  items.style.display = 'block'
+               }
+            }
+      </script>
+   </body>
+			
+</html>

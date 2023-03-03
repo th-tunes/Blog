@@ -1,0 +1,342 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+
+/*CABEÇALHO*/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: lightgray;
+}
+
+/*MENU HAMBURGUER*/
+span#burguer {
+    display: block;
+    background-color:rgb(29, 28, 28);
+    color: white;
+    text-align: center;
+    padding: 0.625rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    background-color:rgb(253, 60, 79);
+}
+
+nav#items {
+    display: none;
+}
+
+nav#items > ul {
+    list-style: none;
+}
+
+nav#items > ul > li > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    background-color: black;
+    border-top: 2px solid white;
+    font-weight: bold;
+    padding: 0.625rem;
+}
+
+nav#items > ul> li > a:hover {
+    background-color: rgb(253, 60, 79);
+}
+
+/*MENU*/
+header > nav {
+    display: none;
+}
+
+/*CONTEÚDO*/
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+}
+
+main > article > h2 {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1.25rem;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(220, 20, 60, 0.7);
+    border-radius: 10px;}
+
+main  > article > p {
+    text-align: justify;
+    margin-bottom: 1.25rem;
+    text-indent: 1.25rem;
+}
+
+main > article > figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.container-image-index {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.image-index {
+    width: 100%;
+    border-radius: 0.625rem;
+}
+
+.icon-main {
+    width: 4rem;
+    height: 4rem;
+} 
+
+main > article > figure > figcaption > a {
+    display: block;
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(253, 60, 79);
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    padding: 0.625rem;
+    border-radius: 10px;
+}
+
+main > article > figure > figcaption > a:hover {
+    background-color: black;
+}
+
+main > article > figure > figcaption > a > span {
+    color: black;
+    background-color: white;
+    border-radius: 100%;
+    padding: 0.1875rem;
+    margin-left: 0.375rem;
+}
+
+/*FORMULARIO*/
+.content-form > h2 {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1.25rem;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(220, 20, 60, 0.7);
+    border-radius: 10px;
+}
+
+.form-container {
+    text-align: center;
+}
+
+fieldset {
+    padding: 0.625rem;
+    border-radius: 10px;
+    border-color: rgb(253, 60, 79);
+    background-color: antiquewhite;
+}
+
+legend {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: crimson;
+    background-color: rgb(211, 211, 211);
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: start;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 0.625rem;
+}
+
+label {
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+    padding: 0.375rem;
+    border-radius: 0.625rem;;
+}
+
+.name-container, .email-container,  .checkbox-container, .comment-container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.5rem;
+}
+
+input#form-checkbox{
+    align-self: flex-start;
+}
+
+
+
+.form-btn > input {
+   color: white;
+   background-color: black;
+   border: none;
+   width: 6.25rem;
+   margin-top: 0.5rem;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.form-btn > input:hover {
+    background-color: crimson;
+}
+
+  /*about.html (video)*/
+  main > article > div {   
+    text-align: center;
+}
+
+
+/*RODAPÉ*/
+footer {
+    width: 100vw;
+    background-color: lightgray;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    padding: 0.625rem;
+}
+
+footer > nav > ul > li > a > img, footer > figure > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.0625rem;
+}
+
+footer > nav > ul {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+footer > figure {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+footer > figure > figcaption {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: rgb(29, 28, 28)
+}
+
+footer > figure > span {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: rgb(253, 60, 79);
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 1200px) {
+    
+    header {
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    /*MENUS*/
+    span#burguer {
+        display: none;
+    }
+
+    header > nav {
+        display: flex;
+    }
+
+   header > nav > ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    header > nav > ul > li > a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: whitesmoke;
+        background-color: black;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        font-weight: bold;
+        padding: 0.625rem;
+    }
+    
+    header > nav > ul> li > a:hover {
+        background-color: rgb(253, 60, 79);
+    }
+    
+    /*CONTEUDO*/
+    
+
+    main  > article > p {
+        text-align: center;
+        margin-bottom: 1.25rem;
+        text-indent: 1.25rem;
+    }
+
+    .image-index {
+        width: 30%;
+        border-radius: 0.625rem;
+    }
+
+    main > article > figure {
+        justify-content: center;
+        gap: 3.125rem;
+    }
+
+    main > article > figure > img {
+        width: 5rem;
+        height: 5rem;
+    } 
+
+    main > article > div > video {   
+        width: 500px;
+        height: 300px;
+    }
+  
+}
