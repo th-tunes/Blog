@@ -23,7 +23,7 @@ header {
 }
 
 /*MENU HAMBURGUER*/
-span#burguer {
+.nav-burguer {
     display: block;
     background-color:rgb(29, 28, 28);
     color: white;
@@ -33,19 +33,15 @@ span#burguer {
     cursor: pointer;
 }
 
-span#burguer:hover {
+.nav-burguer:hover {
     background-color:rgb(253, 60, 79);
 }
 
-nav#items {
+.nav-burguer-list {
     display: none;
 }
 
-nav#items > ul {
-    list-style: none;
-}
-
-nav#items > ul > li > a {
+.nav-burguer-link {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -57,12 +53,12 @@ nav#items > ul > li > a {
     padding: 0.625rem;
 }
 
-nav#items > ul> li > a:hover {
+.nav-burguer-link:hover {
     background-color: rgb(253, 60, 79);
 }
 
 /*MENU*/
-header > nav {
+.header-nav{
     display: none;
 }
 
@@ -77,7 +73,7 @@ main {
     border-radius: 0.625rem;
 }
 
-main > article > h2 {
+.main-title {
     text-align: center;
     padding: 0.5rem;
     margin-bottom: 1.25rem;
@@ -86,13 +82,13 @@ main > article > h2 {
     background-color: rgb(220, 20, 60, 0.7);
     border-radius: 10px;}
 
-main  > article > p {
+.main-article-p {
     text-align: justify;
     margin-bottom: 1.25rem;
     text-indent: 1.25rem;
 }
 
-main > article > figure {
+.main-article-figure {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -100,8 +96,6 @@ main > article > figure {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-
-
 
 .container-image-index {
     text-align: center;
@@ -118,7 +112,7 @@ main > article > figure {
     height: 4rem;
 } 
 
-main > article > figure > figcaption > a {
+ .main-link{
     display: block;
     list-style: none;
     text-transform: uppercase;
@@ -131,11 +125,11 @@ main > article > figure > figcaption > a {
     border-radius: 10px;
 }
 
-main > article > figure > figcaption > a:hover {
+.main-link:hover {
     background-color: black;
 }
 
-main > article > figure > figcaption > a > span {
+.icon-music {
     color: black;
     background-color: white;
     border-radius: 100%;
@@ -238,35 +232,22 @@ footer {
     padding: 0.625rem;
 }
 
-footer > nav > ul > li > a > img, footer > figure > img {
+.footer-link-medias {
     width: 1.5rem;
     height: 1.5rem;
     padding: 0.0625rem;
 }
 
-footer > nav > ul {
-    list-style: none;
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-}
-
-footer > figure {
+.footer-img-contact {
     display: flex;
     align-items: center;
     gap: 0.625rem;
 }
 
-footer > figure > figcaption {
+.footer-img-description {
     font-size: 0.75rem;
     font-weight: bold;
     color: rgb(29, 28, 28)
-}
-
-footer > figure > span {
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: rgb(253, 60, 79);
 }
 
 /*MEDIA QUERIES*/
@@ -278,22 +259,16 @@ footer > figure > span {
     }
 
     /*MENUS*/
-    span#burguer {
+    .nav-burguer{
         display: none;
     }
 
-    header > nav {
+    .header-nav {
         display: flex;
-    }
-
-   header > nav > ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
         gap: 2rem;
     }
-    
-    header > nav > ul > li > a {
+
+    .header-nav-link {
         display: block;
         text-align: center;
         text-decoration: none;
@@ -306,14 +281,13 @@ footer > figure > span {
         padding: 0.625rem;
     }
     
-    header > nav > ul> li > a:hover {
+    .header-nav-link:hover {
         background-color: rgb(253, 60, 79);
     }
     
     /*CONTEUDO*/
     
-
-    main  > article > p {
+    .main-article-p {
         text-align: center;
         margin-bottom: 1.25rem;
         text-indent: 1.25rem;
@@ -324,17 +298,17 @@ footer > figure > span {
         border-radius: 0.625rem;
     }
 
-    main > article > figure {
+    .main-article-figure {
         justify-content: center;
         gap: 3.125rem;
     }
 
-    main > article > figure > img {
+    .icon-main {
         width: 5rem;
         height: 5rem;
     } 
 
-    main > article > div > video {   
+    .about-video {   
         width: 500px;
         height: 300px;
     }

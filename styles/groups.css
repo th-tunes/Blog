@@ -33,7 +33,7 @@ body > nav {
 }
 
 /*MENU HAMBURGUER*/
-span#burguer {
+.nav-burguer {
     display: block;
     background-color:rgb(29, 28, 28);
     color: white;
@@ -43,19 +43,15 @@ span#burguer {
     cursor: pointer;
 }
 
-span#burguer:hover {
+.nav-burguer:hover {
     background-color:rgb(253, 60, 79);
 }
 
-nav#items {
+.nav-burguer-list {
     display: none;
 }
 
-nav#items > ul {
-    list-style: none;
-}
-
-nav#items > ul > li > a {
+.nav-burguer-link {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -67,12 +63,12 @@ nav#items > ul > li > a {
     padding: 0.625rem;
 }
 
-nav#items > ul> li > a:hover {
+.nav-burguer-link:hover {
     background-color: rgb(253, 60, 79);
 }
 
 /*MENU*/
-header > nav {
+.header-nav {
     display: none;
 }
 
@@ -89,13 +85,18 @@ main {
     font-weight: bold;
 }
 
-main > article > h2 {
+.main-title {
     padding-bottom: 1.25rem; 
     text-align: center;
     color: crimson;
 }
 
-main  > article > p {
+.sub-title {
+  text-align: center;
+  padding-bottom: 1.25rem; 
+}
+
+.main-article-p {
     text-align: center;
     margin-bottom: 1.25rem;
     text-indent: 1.25rem;
@@ -105,21 +106,21 @@ main  > article > p {
     border-radius: 10px ;
 }
 
-main > article > figure {
+.main-article-figure {
     margin-bottom: 1.25rem;
     text-align: center;
 }
 
-main > article > figure > img {
+.instrument-img {
     width: 50%;
     border-radius: 10px;
 } 
 
-main figcaption {
+.instrument-name {
     color: crimson;
 }
 
-main section {
+.characteristics-instrument {
     margin-bottom: 1.25rem;
     font-size: 0.875rem;
     background-color:antiquewhite;
@@ -127,14 +128,13 @@ main section {
     border-radius: 10px ;
 }
 
-
-main > section > ul  {
+.list-main  {
     text-align: center;
     padding: 0.75rem;
     list-style: none;
 }
 
-main > section > ul > li {
+.content-list {
     font-size: 0.875rem;
     padding-bottom: 0.75rem;
 }
@@ -151,38 +151,25 @@ footer {
     padding: 0.625rem;
 }
 
-footer > nav > ul > li > a > img, footer > figure > img {
+.footer-link-medias {
     width: 1.5rem;
     height: 1.5rem;
     padding: 0.0625rem;
 }
 
-footer > nav > ul {
-    list-style: none;
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-}
-
-footer > figure {
+.footer-img-contact {
     display: flex;
     align-items: center;
     gap: 0.625rem;
 }
 
-footer > figure > figcaption {
+.footer-img-description {
     font-size: 0.75rem;
     font-weight: bold;
     color: rgb(29, 28, 28)
 }
 
-footer > figure > span {
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: rgb(253, 60, 79);
-}
-
-
+/*MEDIA QUERIES*/
 @media (min-width: 1200px) {
 
     header {
@@ -191,22 +178,16 @@ footer > figure > span {
     }
 
     /*MENUS*/
-    span#burguer {
+    .nav-burguer{
         display: none;
     }
 
-    header > nav {
+    .header-nav {
         display: flex;
-    }
-
-   header > nav > ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
         gap: 2rem;
     }
-    
-    header > nav > ul > li > a {
+
+    .header-nav-link {
         display: block;
         text-align: center;
         text-decoration: none;
@@ -219,12 +200,11 @@ footer > figure > span {
         padding: 0.625rem;
     }
     
-    header > nav > ul> li > a:hover {
+    .header-nav-link:hover {
         background-color: rgb(253, 60, 79);
     }
-
-
-    main > article > figure > img {
+    
+    .instrument-img {
         width: 15%;
     } 
 }
