@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Orchestra</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+      <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+   </head>
+
+   <body>
+      <header>
+         <figure>
+            <a href="index.html"><img src="images/itunes.svg" alt="Logo"></a>
+         </figure>
+         <nav class="header-nav">
+            <a href="index.html" class="header-nav-link">home</a>
+            <a href="about.html" class="header-nav-link">sobre</a>
+            <a href="contato.html" class="header-nav-link">contato</a>
+         </nav>
+         <span id="burguer" class="material-icons nav-burguer" onclick="clickMenu()">menu</span>
+      </header>
+
+      <!-- Menu Responsivo-->
+      <nav id="items" class="nav-burguer-list">
+          <a href="index.html" class="nav-burguer-link">home</a>
+          <a href="about.html" class="nav-burguer-link">sobre</a>
+          <a href="contato.html" class="nav-burguer-link">contato</a>
+      </nav>
+     <!-- FIM Menu Responsivo-->
+
+      <main>
+         <article>
+               <h2 class="main-title">Orquestra Sinfônica</h2>
+               <p class="main-article-p">Uma orquestra sinfônica é a união de 80 a 100 instrumentos que, juntos, produzem harmonia, melodia e ritmo no tempo, ou seja, música. Cada instrumento ou união de instrumentos produz um dos 3 elementos da música.</p>
+               <div class="container-image-index">
+                  <img src="images/orchestra.jpg" class="image-index">
+               </div>
+               <p class="main-article-p">As orquestras são constituídas por quatro famílias de instrumentos: 
+                  as cordas, as madeiras, os metais e as percussões.</p>
+               <p class="main-article-p"><strong>Conheça mais sobre cada familia acessando os links em abaixo:</strong></p>
+         </article>
+
+         <article>
+            <figure class="main-article-figure">
+               <img  src="images/violoncelo.png" class="icon-main">
+               <figcaption><a href="groups/strings.html" class="main-link">Família das Cordas<span class="icon-music">&#9836</span></a></figcaption>
+            </figure>
+            <figure class="main-article-figure">
+               <img src="images/clarinete.png" class="icon-main">
+               <figcaption><a href="groups/woodwinds.html" class="main-link">Família das Madeiras<span class="icon-music">&#9836</span></a></figcaption>
+            </figure>
+            <figure class="main-article-figure">
+               <img src="images/trombone.png" class="icon-main">
+               <figcaption><a href="groups/brass.html" class="main-link">Família dos Metais<span class="icon-music">&#9836</span></a></figcaption>
+            </figure>
+            <figure class="main-article-figure">
+               <img src="images/tambor.png" class="icon-main">
+               <figcaption><a href="groups/percussion.html" class="main-link">Família das Percussões<span class="icon-music">&#9836</span></a></figcaption>
+            </figure>
+         </article>
+      </main>
+
+      <footer>
+         <nav>
+            <a href="https://twitter.com/?lang=pt-br"><img src="images/twitter-96.png" class="footer-link-medias"></a>
+            <a href="https://pt-br.facebook.com/login/device-based/regular/login/" ><img src="images/facebook-100.png" class="footer-link-medias"></a>
+            <a href="https://about.instagram.com/pt-br"><img src="images/instagram-100.png" class="footer-link-medias"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-96.png" class="footer-link-medias"></a>
+            <a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419"><img src="images/google-plus-96.png" class="footer-link-medias"></a>
+         </nav>
+         <figure class="footer-img-contact">
+            <img src="images/telefone-100.png" class="footer-link-medias">
+            <figcaption class="footer-img-description">+55 (31) 3219-0021</figcaption>
+         </figure>
+         <figure class="footer-img-contact">
+            <img src="images/envelope-100.png" class="footer-link-medias">
+            <figcaption class="footer-img-description">contato@email.art.br</figcaption>
+         </figure>
+         <figure class="footer-img-contact">
+            <img src="images/gps-100.png" class="footer-link-medias">
+            <figcaption class="footer-img-description">Sala Rio grande do Sul - Rua Tenente Couto, 1090 - RS</figcaption>
+         </figure>
+      </footer>
+
+      <script>
+            function clickMenu() {
+               if (items.style.display == 'block') {
+                  items.style.display = 'none'
+               } else {
+                  items.style.display = 'block'
+               }
+            }
+      </script>
+   </body>
+			
+</html>

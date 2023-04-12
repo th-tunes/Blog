@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Orchestra</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+      <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+   </head>
+
+   <body>
+      <header>
+         <figure>
+            <a href="index.html"><img src="images/itunes.svg" alt="Logo"></a>
+         </figure>
+         <nav class="header-nav">
+            <a href="index.html" class="header-nav-link">home</a>
+            <a href="about.html" class="header-nav-link">sobre</a>
+            <a href="contato.html" class="header-nav-link">contato</a>
+         </nav>
+         <span id="burguer"class="material-icons nav-burguer" onclick="clickMenu()">menu</span>
+      </header>
+
+      <nav id="items" class="nav-burguer-list">
+          <a href="index.html" class="nav-burguer-link">home</a>
+          <a href="about.html" class="nav-burguer-link">sobre</a>
+          <a href="contato.html" class="nav-burguer-link">contato</a>
+      </nav>
+
+      <main class="content-form">
+            <h2>Contate-nos</h2>
+        <article class="form-container">
+            <form action="https://getform.io/f/6e43d7b0-18b6-4fb0-8b81-50b716693007" method="post">
+               <fieldset>
+                  <legend>Dados</legend>
+                  <div class="name-container">
+                     <label for="first-name">Nome:</label>
+                     <input type="text" name="first-name" id="first-name" placeholder="Nome" required minlength="3" maxlength="16">
+                  </div>
+                  <div class="name-container">
+                     <label for="last-name">Sobrenome:</label>
+                     <input type="text" name="last-name" id="last-name" placeholder="Sobrenome" required minlength="3" maxlength="16">
+                  </div>
+                  <div class="email-container">
+                     <label for="form-email">E-mail:</label>
+                     <input type="email" name="email-address" id="form-email" placeholder="Ex: nome@provedor.com.br" required>
+                  </div>
+                  <div class="checkbox-container">
+                     <label for="form-checkbox">Receber newsletter diaria?</label>
+                     <input type="checkbox" name="check-newsletter" id="form-checkbox" checked>
+                  </div>
+                  <div class="comment-container">
+                     <label for="form-comment">Mensagem:</label>
+                     <textarea name="comment" id="form-comment" rows="5" minlength="16" maxlength="256"></textarea>
+                  </div>
+                  <div class="form-btn">
+                     <input type="submit" value="Enviar">
+                  </div>
+               </fieldset>
+            </form>
+        </article>
+      </main>
+
+     <footer>
+         <nav>
+            <a href="https://twitter.com/?lang=pt-br"><img src="images/twitter-96.png" class="footer-link-medias"></a>
+            <a href="https://pt-br.facebook.com/login/device-based/regular/login/" ><img src="images/facebook-100.png" class="footer-link-medias"></a>
+            <a href="https://about.instagram.com/pt-br"><img src="images/instagram-100.png" class="footer-link-medias"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-96.png" class="footer-link-medias"></a>
+            <a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419"><img src="images/google-plus-96.png" class="footer-link-medias"></a>
+         </nav>
+         <figure class="footer-img-contact">
+            <img src="images/telefone-100.png" class="footer-link-medias">
+            <figcaption class="footer-img-description">+55 (31) 3219-0021</figcaption>
+         </figure>
+         <figure class="footer-img-contact">
+            <img src="images/envelope-100.png" class="footer-link-medias">
+            <figcaption class="footer-img-description">contato@email.art.br</figcaption>
+         </figure>
+         <figure class="footer-img-contact">
+            <img src="images/gps-100.png" class="footer-link-medias">
+            <figcaption class="footer-img-description">Sala Rio grande do Sul - Rua Tenente Couto, 1090 - RS</figcaption>
+         </figure>
+      </footer>
+
+      <script>
+            function clickMenu() {
+               if (items.style.display == 'block') {
+                  items.style.display = 'none'
+               } else {
+                  items.style.display = 'block'
+               }
+            }
+      </script>
+   </body>
+			
+</html>

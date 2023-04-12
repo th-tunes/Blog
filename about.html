@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Orchestra</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+      <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+   </head>
+
+   <body>
+      <header>
+         <figure>
+            <a href="index.html"><img src="images/itunes.svg" alt="Logo"></a>
+         </figure>
+         <nav class="header-nav">
+            <a href="index.html" class="header-nav-link">home</a>
+            <a href="about.html" class="header-nav-link">sobre</a>
+            <a href="contato.html" class="header-nav-link">contato</a>
+         </nav>
+         <span id="burguer"class="material-icons nav-burguer" onclick="clickMenu()">menu</span>
+      </header>
+      
+     <!-- Menu Responsivo-->
+      <nav id="items" class="nav-burguer-list">
+          <a href="index.html" class="nav-burguer-link">home</a>
+          <a href="about.html" class="nav-burguer-link">sobre</a>
+          <a href="contato.html" class="nav-burguer-link">contato</a>
+      </nav>
+     <!-- FIM Menu Responsivo-->
+
+      <main>
+         <article>
+               <h2 class="main-title">História e Curiosidades</h2>
+               <p class="main-article-p">Para saber mais de como surgiu a orquestra sinfonica e outras curiosidades, veja o video em abaixo:</p>
+               <div>
+                  <video class="about-video" width="320" height="240" controls>
+                     <source src="./video/movie.mp4" type="video/mp4">
+                  </video>
+               </div>
+         </article>
+
+      </main>
+
+      <footer>
+         <nav>
+            <a href="https://twitter.com/?lang=pt-br"><img src="images/twitter-96.png" class="footer-link-medias"></a>
+            <a href="https://pt-br.facebook.com/login/device-based/regular/login/" ><img src="images/facebook-100.png" class="footer-link-medias"></a>
+            <a href="https://about.instagram.com/pt-br"><img src="images/instagram-100.png" class="footer-link-medias"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-96.png" class="footer-link-medias"></a>
+            <a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419"><img src="images/google-plus-96.png" class="footer-link-medias"></a>
+         </nav>
+         <figure class="footer-img-contact">
+            <img src="images/telefone-100.png" class="footer-link-medias">
+            <figcaption class="footer-img-description">+55 (31) 3219-0021</figcaption>
+         </figure>
+         <figure class="footer-img-contact">
+            <img src="images/envelope-100.png" class="footer-link-medias">
+            <figcaption class="footer-img-description">contato@email.art.br</figcaption>
+         </figure>
+         <figure class="footer-img-contact">
+            <img src="images/gps-100.png" class="footer-link-medias">
+            <figcaption class="footer-img-description">Sala Rio grande do Sul - Rua Tenente Couto, 1090 - RS</figcaption>
+         </figure>
+      </footer>
+     
+      <script>
+            function clickMenu() {
+               if (items.style.display == 'block') {
+                  items.style.display = 'none'
+               } else {
+                  items.style.display = 'block'
+               }
+            }
+      </script>
+   </body>
+			
+</html>
