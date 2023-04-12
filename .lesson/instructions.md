@@ -1,41 +1,61 @@
 # Descrição do projeto
 
 Chegou a hora de colocar em prática tudo que você aprendeu durante essa disciplina!
+Utilizando as tecnologias aprendidas em aula, você vai acrescentar novas funcionalidades ao seu projeto de HTML e CSS.
 
-Utilizando as tecnologias aprendidas em aula, você vai criar o seu próprio blog, portfólio ou currículo online. O conteúdo e elementos estéticos desse projeto ficam ao seu critério, mas é necessário que esse site possua pelo menos dois layouts diferentes: a página home, que possui uma lista de publicações; e a visualização da publicação, que é a página de visualização do conteúdo completo. Um exemplo que pode ser seguido é o blog 2ality (https://2ality.com/), do importantíssimo pesquisador da área de desenvolvimento web, Dr. Axel Rauschmayer.
+Exemplos de novas funcionalidades com JavaScript são:
 
- Para além dessas características estruturais, o seu projeto precisa ter os seguintes requisitos:
+-	Drawer que abre ao pressionar um botão;
+-	Formulário que realiza o envio e validação dos dados com fetch;
+-	Banner que troca as imagens e textos a cada n segundos;
+-	Banner com botões de avançar e retroceder o conteúdo;
+-	Área de comentários que é carregada de forma assíncrona.
 
-## Da estrutura da página
+Essas novas funcionalidades serão implementadas durante as aulas em perspectiva dos itens de rubrica que devem ser demonstrados na avaliação. No entanto, você pode implementar qualquer tipo de melhoria em JavaScript, desde que essas novas funcionalidades, juntas, cumpram os critérios de avaliação do projeto.
 
-Criar o “esqueleto” da página HTML, utilizar as tags básicas e criar links entre ao menos duas páginas.
+Para além dessas características estruturais, o seu projeto precisa ter os seguintes requisitos:
 
-## Dos elementos estéticos e de layout
-Utilizar uma folha de estilo externa, configurar espaçamento dos elementos, estilizar os textos da página com CSS e posicionar elementos lado a lado com FlexBox. 
+### 1.	Dos algoritmos e do uso de lógica de programação.
+- Realizar a criação de variáveis (com let ou const);
+- Criar estruturas de iteração (com if /else);
+- Utilizar estruturas de iteração (como for ou while);
+- Realizar a concatenação de strings (com + ou concat, por exemplo).
 
-## Da criação de um formulário
-Crie um formulário de contato que possua ao menos três campos de entrada de textos, sendo que é necessário utilizar campo de texto, textarea e radio (ou checkbox). É necessário também implementar a validação dos campos do formulário utilizando as propriedades básicas existentes no HTML. Além disso, deve ser necessário enviar o formulário através de serviços como getform.io.
+### 2.	Do uso de funções e estruturas de dados.
+- Declarar e invocar funções (com function ou arrow functions);
+- Criar e manipular objetos do JavaScript (utilizar as propriedades, alterá-las, deletas, etc.);
+- Criar e manipular vetores (remover, alterar e concatenar itens, etc.);
+- Iterar vetores com as estruturas de iteração (com for, while, map, forEach, etc.). 
 
-## Da responsividade da página
-Pelo menos duas áreas do site precisam ter layout diferente em viewport mobile e desktop. Também é necessário utilizar medidas responsivas (%, em ou rem) para ajustar o conteúdo de acordo com o tamanho da tela. Por fim, é necessário implementar a responsividade do formulário anterior.
+### 3.	Da manipulação do DOM via JavaScript
+- Selecionar um elemento (com document.querySelector ou document.getElementById);
+- Selecionar múltiplos elementos no HTML da página (com document.querySelectorAll ou document.getElementsByClassName);
+- Inserir um elemento no HTML da página (com appendChild ou innerHTML);
+- Inserir múltiplos elementos no HTML da página (utilizando for ou forEach com appendChild).
+
+### 4.	Do uso de Promises e das requisições assíncronas
+Criar uma função assíncrona (com async) e aguardar a promise resolver (com await);
+Criar uma Promise e aguardá-la resolver (com new Promise);
+Realizar uma requisição HTTP utilizando fetch (criar um arquivo JSON para consumí-lo);
+Manipular a resposta de uma requisição HTTP e inserir esses dados no HTML da página.
 
 # Critérios de avaliação
 
-| Competência                                         | Itens de Rubrica                                                                                          |
-| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| Desenvolver páginas web com HTML                      | O aluno criou a estrutura da página HTML (com as tags html, head, body e title)?                          |
-| Desenvolver páginas web com HTML                          | O aluno criou ao menos um título (h1-h6), dois parágrafos (p) e três imagens (img)?                       |
-| Desenvolver páginas web com HTML                   | O aluno utilizou as tags div, span, ul e li?                                                              |
-| Desenvolver páginas web com HTML                          | O aluno utilizou a tag a para criar link entre duas páginas?                                              |
-| Estilizar páginas web com CSS                  | O aluno utilizou uma folha de estilo externa?                                                             |
-| Estilizar páginas web com CSS               | O aluno utilizou os atributos margin e padding ao menos duas vezes?                                       |
-| Estilizar páginas web com CSS                          | O aluno estilou os textos da página com os atributos font-size, font-family e color?                      |
-| Estilizar páginas web com CSS              | O aluno utilizou FlexBox para posicionar dois ou mais elementos lado a lado?                              |
-| Desenvolver formulários com validação de dados                            | O aluno criou um formulário com cabeçalho, botão de envio e ao menos três campos?                         |
-| Desenvolver formulários com validação de dados                | O aluno utilizou campo de texto, textarea e radio (ou checkbox) no seu formulário?                        |
-| Desenvolver formulários com validação de dados                   | O aluno Implementou a validação dos campos do formulário?                                                 |
-| Desenvolver formulários com validação de dados                         | O aluno implementou o envio dos dados do formulário?                                                      |
-| Desenvolver páginas web responsivas       | O aluno utilizou media queries em pelo menos duas áreas do site para ter uma versão mobile e desktop?     |
-| Desenvolver páginas web responsivas                  | O aluno utilizou medidas como %, em e rem em seu projeto?                                                 |
-| Desenvolver páginas web responsivas                        | O aluno ajustou o formulário para ter uma versão mobile e desktop?                                        |
-| Desenvolver páginas web responsivas | O aluno ajustou o tamanho das fontes e o espaçamento entre os elementos de acordo com o viewport da tela? |
+| Competência                                            | Itens de Rubrica                                                         |
+| --------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Utilizar algoritmos e lógica de programação em JavaScript | O aluno utilizou let ou const para declarar as variáveis?                |
+| Utilizar algoritmos e lógica de programação em JavaScript | O aluno utilizou if / else em seu projeto?                               |
+| Utilizar algoritmos e lógica de programação em JavaScript | O aluno utilizou for ou while em seu projeto?                            |
+| Utilizar algoritmos e lógica de programação em JavaScript | O aluno concatenou strings em seu projeto?                               |
+| Utilizar funções e manipular estruturas de dados básicas  | O aluno utilizou pelo menos duas funções em seu projeto?                 |
+| Utilizar funções e manipular estruturas de dados básicas  | O aluno criou e manipulou um objeto?                                     |
+| Utilizar funções e manipular estruturas de dados básicas  | O aluno criou e manipulou um vetor?                                      |
+| Utilizar funções e manipular estruturas de dados básicas  | O aluno utilizou for, while, map ou forEach para iterar um vetor?        |
+| Manipular o DOM via JavaScript                            | O aluno selecionou e alterou por ID ou classe um elemento HTML?          |
+| Manipular o DOM via JavaScript                            | O aluno selecionou e alterou por classe múltiplos elementos HTML?        |
+| Manipular o DOM via JavaScript                            | O aluno criou e inseriu no DOM um novo elemento HTML?                    |
+| Manipular o DOM via JavaScript                            | O aluno criou e inseriu no DOM múltiplos elementos HTML?                 |
+| Utilizar Promises e realizar requisições assíncronas      | O aluno utilizou async / await em seu projeto?                           |
+| Utilizar Promises e realizar requisições assíncronas      | O aluno criou uma Promise em seu projeto?                                |
+| Utilizar Promises e realizar requisições assíncronas      | O aluno requisitou um JSON utilizando fetch?                             |
+| Utilizar Promises e realizar requisições assíncronas      | O aluno inseriu no DOM os dados da resposta de uma requisição com fetch? |

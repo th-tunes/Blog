@@ -19,21 +19,15 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    height: 68px;
     background-color: lightgray;
     position: sticky;
-    top: 0%;
-    left: 0%;
-    padding: 0.625rem;
-}
-
-body > nav {
-    position: sticky;
-    top: 10%;
-    left: 10%;
+    top: 0;
+    left: 0;
 }
 
 /*MENU HAMBURGUER*/
-.nav-burguer {
+.btn-drawer {
     display: block;
     background-color:rgb(29, 28, 28);
     color: white;
@@ -43,15 +37,21 @@ body > nav {
     cursor: pointer;
 }
 
-.nav-burguer:hover {
+.btn-drawer:hover {
     background-color:rgb(253, 60, 79);
 }
 
-.nav-burguer-list {
-    display: none;
+.drawer-list {
+    height: calc(100% - 68px);
+    width: 200px;
+    position: fixed;
+    top: 68px;
+    right: -200px;
+    transition: right 1s;
+    background-color: black;
 }
 
-.nav-burguer-link {
+.drawer-link {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -63,7 +63,7 @@ body > nav {
     padding: 0.625rem;
 }
 
-.nav-burguer-link:hover {
+.drawer-link:hover {
     background-color: rgb(253, 60, 79);
 }
 
@@ -119,6 +119,8 @@ main {
 .instrument-name {
     color: crimson;
 }
+
+.container-main-information-instrument{}
 
 .characteristics-instrument {
     margin-bottom: 1.25rem;

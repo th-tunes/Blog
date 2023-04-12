@@ -18,13 +18,13 @@
             <a href="about.html" class="header-nav-link">sobre</a>
             <a href="contato.html" class="header-nav-link">contato</a>
          </nav>
-         <span id="burguer"class="material-icons nav-burguer" onclick="clickMenu()">menu</span>
+         <span id="btn-drawer"class="material-icons btn-drawer" onclick="clickMenu()">menu</span>
       </header>
 
-      <nav id="items" class="nav-burguer-list">
-          <a href="index.html" class="nav-burguer-link">home</a>
-          <a href="about.html" class="nav-burguer-link">sobre</a>
-          <a href="contato.html" class="nav-burguer-link">contato</a>
+      <nav id="items" class="drawer-list">
+          <a href="index.html" class="drawer-link">home</a>
+          <a href="about.html" class="drawer-link">sobre</a>
+          <a href="contato.html" class="drawer-link">contato</a>
       </nav>
 
       <main class="content-form">
@@ -82,16 +82,7 @@
             <figcaption class="footer-img-description">Sala Rio grande do Sul - Rua Tenente Couto, 1090 - RS</figcaption>
          </figure>
       </footer>
-
-      <script>
-            function clickMenu() {
-               if (items.style.display == 'block') {
-                  items.style.display = 'none'
-               } else {
-                  items.style.display = 'block'
-               }
-            }
-      </script>
+           <script src="./js/drawer.js"></script>
    </body>
 			
 </html>

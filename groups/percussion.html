@@ -18,14 +18,14 @@
             <a href="../about.html" class="header-nav-link">sobre</a>
             <a href="../contato.html" class="header-nav-link">contato</a>
          </nav>
-         <span id="burguer" class="material-icons nav-burguer" onclick="clickMenu()">menu</span>
+         <span id="btn-drawer" class="material-icons btn-drawer" onclick="clickMenu()">menu</span>
       </header>
 
       <!-- Menu Responsivo-->
-      <nav id="items" class="nav-burguer-list">
-          <a href="../index.html" class="nav-burguer-link">home</a>
-          <a href="../about.html" class="nav-burguer-link">sobre</a>
-          <a href="../contato.html" class="nav-burguer-link">contato</a>
+      <nav id="items" class="drawer-list">
+          <a href="../index.html" class="drawer-link">home</a>
+          <a href="../about.html" class="drawer-link">sobre</a>
+          <a href="../contato.html" class="drawer-link">contato</a>
       </nav>
      <!-- FIM Menu Responsivo-->
 
@@ -36,7 +36,8 @@
             Os mais utilizados são tímpanos, bumbo, prato de ataque e xilofone, mas não há limites para o número e a variedade de instrumentos que podem integrar a seção de percussão de uma formação musical.</p>
             <h2 class="sub-title">Características de cada membro:</h2>
          </article>
-
+      
+        <section class="container-main-information">
          <article>
             <figure class="main-article-figure">
                <img src="../images/percussao_timpano.jpg" alt="timpano instrumento de percussão" class="instrument-img">
@@ -44,15 +45,17 @@
             </figure>
          </article>  
 
-         <section class="characteristics-instrument">   
+         <article class="characteristics-instrument">   
             <ul class="list-main">
                <li class="content-list">O tímpano é um grande tambor, uma caixa de ressonância feita de madeira ou metal, de formato semiesférico, com cerca de 60 centímetros de diâmetro.</li>
                <li class="content-list">Coberta por uma pele estendida sobre um arco, essa pele fica presa a hastes que, por sua vez, são ligadas a pedais.</li>
                <li class="content-list">Por esse mecanismo, quando o músico quer notas mais agudas, ele pressiona o pedal esticando a pele. Com a pele mais frouxa, são obtidas notas mais graves.</li>
                <li class="content-list">Introduzidos na orquestra em 1670, os tímpanos são percutidos por meio de baquetas chamadas bilros.</li>
             </ul>
-          </section>    
-         
+          </article>    
+        </section>
+
+        <section class="container-main-information">
           <article>
             <figure class="main-article-figure">
                <img src="../images/percussao_bumbo.jpg" alt="bumbo instrumento de percussão" class="instrument-img">
@@ -60,14 +63,16 @@
             </figure>
          </article>  
 
-         <section class="characteristics-instrument">   
+         <article class="characteristics-instrument">   
             <ul class="list-main">
                <li class="content-list">O bumbo sinfônico é uma caixa circular de madeira ou folha de ferro. Tanto a parte superior quanto a inferior são cobertas por uma pele esticada, que é apertada nas extremidades por parafusos de pressão, o que permite regular e melhorar sua ressonância.</li>
                <li class="content-list">Pode ser percutido tanto com baquetas (almofadadas ou duras), quanto com vassourinhas de metal.</li>
                <li class="content-list">Característico das bandas militares, foi introduzido na orquestra sinfônica por Mozart, em meados do século XVIII.</li>
             </ul>
-          </section>    
-          
+          </article>  
+        </section>
+      
+        <section class="container-main-information"> 
           <article>
             <figure class="main-article-figure">
                <img src="../images/percussao_prato_ataque.jpg" alt="prato de ataque instrumento de percussão" class="instrument-img">
@@ -75,14 +80,16 @@
             </figure>
          </article>  
 
-         <section class="characteristics-instrument">   
+         <article class="characteristics-instrument">   
             <ul class="list-main">
                <li class="content-list">Os pratos de choque, quando golpeados um contra o outro, produzem um som impactante, forte, normalmente quando toda a orquestra está tocando forte também.</li>
                <li class="content-list">Existem várias técnicas de produção de sons a partir do atrito entre os pratos: pode-se deixar o som ressoar até sumir, pode-se abafá-lo logo após o choque, criando suspense, pode-se produzir sons contínuos batendo-os suavemente ou agitando-os.</li>
                <li class="content-list">Em muitos concertos, o pratista não toca mais que uma vez, porém, sem a sua participação, a música não atinge seu clímax.</li>
             </ul>
-          </section>  
-
+          </article>  
+        </section>
+      
+        <section class="container-main-information">
           <article>
             <figure class="main-article-figure">
                <img src="../images/percussao_xilofone.jpg" alt="xilone instrumento de percussão" class="instrument-img">
@@ -90,13 +97,14 @@
             </figure>
          </article>  
 
-         <section class="characteristics-instrument">   
+         <article class="characteristics-instrument">   
             <ul class="list-main">
                <li class="content-list">O xilofone é similar ao metalofone, mas suas teclas são feitas de madeira.</li>
                <li class="content-list">Seu timbre é duro e brilhante e pode ser tocado com baquetas de diversas gradações de dureza.</li>
                <li class="content-list">O xilofone passou a ser usado em orquestras a partir do século XIX.</li>
             </ul>
-          </section>  
+          </article>
+        </section>
       </main>
 
        <footer>
@@ -121,15 +129,7 @@
          </figure>
       </footer>
 
-      <script>
-            function clickMenu() {
-               if (items.style.display == 'block') {
-                  items.style.display = 'none'
-               } else {
-                  items.style.display = 'block'
-               }
-            }
-      </script>
+      <script src="../js/drawer.js"></script>
    </body>
 			
 </html>
