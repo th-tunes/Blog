@@ -6,7 +6,7 @@ let bannerImgsIndex = 0;
 const changeImageInterval = 5000;
 
 async function startBanner() {
-  const response = await fetch('./json/bannerImage.json');
+  const response = await fetch('json/bannerImage.json');
   bannerImgs = await response.json();
 
   onBannerImageChange();

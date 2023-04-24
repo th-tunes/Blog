@@ -1,0 +1,30 @@
+/*CONTEUDO*/
+
+.content-section {
+  
+}
+
+.content-container {
+  
+}
+
+.content-title {
+  text-align: center;
+  padding: 0.625rem 0;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.content-img {
+  width: 70%;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 1200px) {
+
+  .content-img {
+    width: 35%;
+  }
+}

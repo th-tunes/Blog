@@ -5,13 +5,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Orchestra</title>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
-      <link rel="stylesheet" type="text/css" href="./styles/groups.css">
+      <link rel="stylesheet" type="text/css" href="styles/groups.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
    </head>
 
    <body>
       <header>
          <figure>
-            <a href="../index.html"><img src="../images/itunes.svg" alt="Logo"></a>
+            <a href="index.html"><img src="images/itunes.svg" alt="Logo"></a>
          </figure>
          <nav class="header-nav">
             <a href="index.html" class="header-nav-link">home</a>
@@ -39,101 +40,119 @@
             <h2 class="sub-title">Características de cada membro:</h2>
          </article>
 
-         <article>
-            <figure class="main-article-figure">
-               <img src="../images/madeiras_flauta.jpg" alt="flauta instrumento musical" class="instrument-img">
-               <figcaption class="instrument-name">Flauta</figcaption>
-            </figure>
-         </article>  
+        <div class="swiper">
+          <section class="swiper-wrapper">
+            <section class="swiper-slide">
+               <section class="container-main-information">
+                  <article class="characteristics-instrument">  
+                    <figure class="main-article-figure">
+                      <img src="images/madeiras_flauta.jpg" alt="flauta instrumento musical" class="instrument-img">
+                      <figcaption class="instrument-name">Flauta</figcaption>
+                    </figure>
+            
+                    <ul class="list-main">
+                      <li class="content-list">A flauta um dos instrumentos mais antigos de que se tem conhecimento.</li>
+                      <li class="content-list">Sua incorporação a uma orquestra somente aconteceu na segunda metade do século XVII, após o flautista, 
+                      compositor e luthier alemão Theobald Boehm criar a moderna flauta transversal.</li>
+                      <li class="content-list">Hoje produzida em metal, a nova flauta manteve o timbre “amadeirado” da Antiguidade.</li>
+                      <li class="content-list">Frequentemente tratada como instrumento solista e como instrumento da orquestra, dos sons mais agudos aos mais graves.</li>
+                    </ul>
+                  </article>  
+                </section>
+            </section>
 
-        <section class="container-main-information">
-          <article class="characteristics-instrument">   
-            <ul class="list-main">
-               <li class="content-list">A flauta um dos instrumentos mais antigos de que se tem conhecimento.</li>
-               <li class="content-list">Sua incorporação a uma orquestra somente aconteceu na segunda metade do século XVII, após o flautista, compositor e luthier alemão Theobald Boehm criar a moderna flauta transversal.</li>
-               <li class="content-list">Hoje produzida em metal, a nova flauta manteve o timbre “amadeirado” da Antiguidade.</li>
-               <li class="content-list">Frequentemente tratada como instrumento solista e como instrumento da orquestra, dos sons mais agudos aos mais graves.</li>
-            </ul>
-          </article>  
-        </section>
+            <section class="swiper-slide">
+                <section class="container-main-information">
+                    <article class="characteristics-instrument">   
+                        <figure class="main-article-figure">
+                            <img src="images/mandeiras_oboe.jpg" alt="obé instrumento musical" class="instrument-img">
+                            <figcaption class="instrument-name">Oboé</figcaption>
+                        </figure>
+            
+                        <ul class="list-main">
+                            <li class="content-list">O oboé, como o conhecemos hoje, é o resultado de importantes modificações ocorridas no decorrer dos séculos XVIII e XIX,
+                            como, por exemplo, o aumento de sua extensão.</li>
+                           <li class="content-list">Possui um formato ligeiramente cônico, possui quase o mesmo tamanho do clarinete. Seu funcionamento, porém, é diferente.</li>
+                          <li class="content-list">Possui 25 buracos com chaves que, ao serem pressionadas, alteram o fluxo do ar que vibra uma palheta dupla acoplada ao instrumento. 
+                          A vibração dessa palheta produz um som que se caracteriza por um timbre delicado e, ao mesmo tempo, penetrante.</li>
+                          <li class="content-list">Antes do início de um concerto, emite a nota de referência para a afinação de toda a orquestra.</li>
+                        </ul>
+                   </article>    
+                </section>
+            </section>
 
-        <section class="container-main-information">
-          <article>
-            <figure class="main-article-figure">
-               <img src="../images/mandeiras_oboe.jpg" alt="obé instrumento musical" class="instrument-img">
-               <figcaption class="instrument-name">Oboé</figcaption>
-            </figure>
-         </article>  
+            <section class="swiper-slide">
+              <section class="container-main-information">
+                  <article class="characteristics-instrument">   
+                      <figure class="main-article-figure">
+                          <img src="images/madeiras_clarinete.jpg" alt="clarinete instrumento musical" class="instrument-img">
+                          <figcaption class="instrument-name">Clarinete</figcaption>
+                      </figure>
+              
+                      <ul class="list-main">
+                          <li class="content-list">O Clarinete surgiu no século XVII, mas somente por volta de 1840 atingiu sua estrutura atual.</li>
+                          <li class="content-list">Possui um sistema de chaves semelhante ao da flauta, criado por Theobald Boehm, uma palheta, 
+                            a boquilha por onde o músico sopra e uma campana na extremidade oposta.</li>
+                          <li class="content-list">A família de clarinetes é grande, são onze tipos de instrumentos que vão desde a Clarineta Sopranino, 
+                          com som mais agudo, até a Clarineta Octocontra-Baixo, com som mais grave. Esta última mede 2,76 m!</li>
+                      </ul>
+                  </article>  
+              </section>
+            </section>
 
-         <article class="characteristics-instrument">   
-            <ul class="list-main">
-               <li class="content-list">O oboé, como o conhecemos hoje, é o resultado de importantes modificações ocorridas no decorrer dos séculos XVIII e XIX, como, por exemplo, o aumento de sua extensão.</li>
-               <li class="content-list">Possui um formato ligeiramente cônico, possui quase o mesmo tamanho do clarinete. Seu funcionamento, porém, é diferente.</li>
-               <li class="content-list">Possui 25 buracos com chaves que, ao serem pressionadas, alteram o fluxo do ar que vibra uma palheta dupla acoplada ao instrumento. A vibração dessa palheta produz um som que se caracteriza por um timbre delicado e, ao mesmo tempo, penetrante.</li>
-               <li class="content-list">Antes do início de um concerto, emite a nota de referência para a afinação de toda a orquestra.</li>
-            </ul>
-          </article>    
-        </section>
+            <section class="swiper-slide">
+              <section class="container-main-information">
+                  <article class="characteristics-instrument">  
+                      <figure class="main-article-figure">
+                          <img src="images/madeiras_fagote.jpg" alt="fagote isntrumento musical" class="instrument-img">
+                          <figcaption class="instrument-name">Fagote</figcaption>
+                      </figure>
+                    
+                      <ul class="list-main">
+                          <li class="content-list">Sua estrutura é composta por uma parte em metal (bocal) e 
+                          quatro partes construídas em madeira (asa, culatra, baixo e campana), encaixadas uma na outra.</li>
+                          <li class="content-list">Assim como o oboé e o corne inglês, o fagote usa palheta dupla.</li>
+                          <li class="content-list">Como o fagote é de construção bastante complexa, são poucos os fabricantes existentes mundo afora. 
+                          O Brasil é um dos poucos países que o fabricam e o nome do construtor é Hary Schweiser. </li>
+                      </ul>
+                </article>  
+              </section>
+            </section>
+          </section>
 
-        <section class="container-main-information">
-          <article>
-            <figure class="main-article-figure">
-               <img src="../images/madeiras_clarinete.jpg" alt="clarinete instrumento musical" class="instrument-img">
-               <figcaption class="instrument-name">Clarinete</figcaption>
-            </figure>
-         </article>  
-
-         <article class="characteristics-instrument">   
-            <ul class="list-main">
-               <li class="content-list">O Clarinete surgiu no século XVII, mas somente por volta de 1840 atingiu sua estrutura atual.</li>
-               <li class="content-list">Possui um sistema de chaves semelhante ao da flauta, criado por Theobald Boehm, uma palheta, a boquilha por onde o músico sopra e uma campana na extremidade oposta.</li>
-               <li class="content-list">A família de clarinetes é grande, são onze tipos de instrumentos que vão desde a Clarineta Sopranino, com som mais agudo, até a Clarineta Octocontra-Baixo, com som mais grave. Esta última mede 2,76 m!</li>
-            </ul>
-          </article>  
-        </section>
-
-        <section class="container-main-information">
-          <article>
-            <figure class="main-article-figure">
-               <img src="../images/madeiras_fagote.jpg" alt="fagote isntrumento musical" class="instrument-img">
-               <figcaption class="instrument-name">Fagote</figcaption>
-            </figure>
-         </article>  
-
-         <article class="characteristics-instrument">   
-            <ul class="list-main">
-               <li class="content-list">Sua estrutura é composta por uma parte em metal (bocal) e quatro partes construídas em madeira (asa, culatra, baixo e campana), encaixadas uma na outra.</li>
-               <li class="content-list">Assim como o oboé e o corne inglês, o fagote usa palheta dupla.</li>
-               <li class="content-list">Como o fagote é de construção bastante complexa, são poucos os fabricantes existentes mundo afora. O Brasil é um dos poucos países que o fabricam e o nome do construtor é Hary Schweiser. </li>
-            </ul>
-          </article>  
-        </section>
+          <div class="swiper-button-prev ac"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+          
+        </div>   
       </main>
 
         <footer>
          <nav class= link-list-medias>
-            <a href="https://twitter.com/?lang=pt-br"><img src="../images/twitter-96.png" class="footer-link-medias"></a>
-            <a href="https://pt-br.facebook.com/login/device-based/regular/login/" ><img src="../images/facebook-100.png" class="footer-link-medias"></a>
-            <a href="https://about.instagram.com/pt-br"><img src="../images/instagram-100.png" class="footer-link-medias"></a>
-            <a href="https://www.youtube.com/"><img src="../images/youtube-96.png" class="footer-link-medias"></a>
-            <a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419"><img src="../images/google-plus-96.png" class="footer-link-medias"></a>
+            <a href="https://twitter.com/?lang=pt-br"><img src="images/twitter-96.png" class="footer-link-medias"></a>
+            <a href="https://pt-br.facebook.com/login/device-based/regular/login/" ><img src="images/facebook-100.png" class="footer-link-medias"></a>
+            <a href="https://about.instagram.com/pt-br"><img src="images/instagram-100.png" class="footer-link-medias"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-96.png" class="footer-link-medias"></a>
+            <a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419"><img src="images/google-plus-96.png" class="footer-link-medias"></a>
          </nav>
          <figure class="footer-img-contact">
-            <img src="../images/telefone-100.png" class="footer-link-medias">
+            <img src="images/telefone-100.png" class="footer-link-medias">
             <figcaption class="footer-img-description">+55 (31) 3219-0021</figcaption>
          </figure>
          <figure class="footer-img-contact">
-            <img src="../images/envelope-100.png" class="footer-link-medias">
+            <img src="images/envelope-100.png" class="footer-link-medias">
             <figcaption class="footer-img-description">contato@email.art.br</figcaption>
          </figure>
          <figure class="footer-img-contact">
-            <img src="../images/gps-100.png" class="footer-link-medias">
+            <img src="images/gps-100.png" class="footer-link-medias">
             <figcaption class="footer-img-description">Sala Rio grande do Sul - Rua Tenente Couto, 1090 - RS</figcaption>
          </figure>
       </footer>
 
-       <script src="../js/drawer.js"></script>
-      <script src="../js/content-drawer.js"></script>
+      <script src="js/drawer.js"></script>
+      <script src="js/content-drawer.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="js/slider.js"></script>
    </body>
 			
 </html>

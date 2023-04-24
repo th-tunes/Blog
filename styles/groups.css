@@ -46,6 +46,7 @@ header {
     height: calc(100% - 68px);
     width: 200px;
     position: fixed;
+    z-index: 80;
     top: 68px;
     right: -200px;
     transition: right 1s;
@@ -99,21 +100,20 @@ main {
 
 .main-article-p {
     text-align: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.9375rem;
     text-indent: 1.25rem;
-    font-size: 0.875rem;
-    background-color:antiquewhite;
+    font-size: 0.75rem;
+    background-color: #ecd5b5;
     padding: 0.5rem;
     border-radius: 10px ;
 }
 
 .main-article-figure {
-    margin-bottom: 1.25rem;
     text-align: center;
 }
 
 .instrument-img {
-    width: 50%;
+    width: 180px;
     border-radius: 10px;
 } 
 
@@ -121,12 +121,10 @@ main {
     color: crimson;
 }
 
-.container-main-information-instrument{}
 
 .characteristics-instrument {
-    margin-bottom: 1.25rem;
-    font-size: 0.875rem;
-    background-color:antiquewhite;
+    font-size: 0.75rem;
+    background-color: #ecd5b5;
     padding: 0.5rem;
     border-radius: 10px ;
 }
@@ -138,7 +136,7 @@ main {
 }
 
 .content-list {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     padding-bottom: 0.75rem;
 }
 
@@ -180,7 +178,9 @@ footer {
 
 /*MEDIA QUERIES*/
 @media (min-width: 1200px) {
+
  
+  
 .header-nav {
     display: flex;
     flex-direction: row;
@@ -203,8 +203,27 @@ footer {
 .header-nav-link:hover {
     background-color: rgb(253, 60, 79);
   }
-    
+
+  .main-title {
+    font-size: 1rem;
+  }
+  
+  .main-article-p{
+    font-size: 1rem;
+  }
+  
 .instrument-img {
-    width: 15%;
+    width: 300px;
   } 
+   
+  .content-list {
+    font-size: 1rem;
+  }
+  
+}
+
+.container {
+  padding: 15px;
+  max-width: 400px;
+  margin: 0 auto;
 }

@@ -5,13 +5,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Orchestra</title>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
-      <link rel="stylesheet" type="text/css" href="./styles/groups.css">
+      <link rel="stylesheet" type="text/css" href="styles/groups.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
    </head>
 
    <body>
       <header>
          <figure>
-            <a href="index.html"><img src="../images/itunes.svg" alt="Logo"></a>
+            <a href="index.html"><img src="images/itunes.svg" alt="Logo"></a>
          </figure>
           <nav class="header-nav">
             <a href="index.html" class="header-nav-link">home</a>
@@ -32,113 +33,135 @@
       </nav>
      <!-- FIM Menu Responsivo-->
         
-      <main>
+  <main>
          <article>
             <h2 class="main-title">Família das Cordas</h2>
-            <p class="main-article-p">Originados no século XVI, a Família das Cordas (Violino, Viola, Cello e Contrabaixo) foram responsáveis por uma devasta quantidade de músicas do estilo da época, atuando em orquestras, numa sinfonia ilustre, já que varia de tons mais agudos até mais graves.</p>
+            <p class="main-article-p">Originados no século XVI, a Família das Cordas (Violino, Viola, 
+              Cello e Contrabaixo) foram responsáveis por uma devasta quantidade de músicas do estilo da época, atuando em orquestras,
+              numa sinfonia ilustre, já que varia de tons mais agudos até mais graves.</p>
             <h2 class="sub-title">Características de cada membro:</h2>
          </article>
+    
+    <div class="swiper">
+    
+      <article class="swiper-wrapper">
+        <section class="swiper-slide">
+          <section class="container-main-information">
+            <article class="characteristics-instrument">   
+                <figure class="main-article-figure">
+                  <img src="images/cordas-violino.jpg" alt="violino instrumento musical" class="instrument-img">
+                  <figcaption class="instrument-name">Violino</figcaption>
+                </figure>
+         
 
-        <section class="container-main-information">
-         <article>
-            <figure class="main-article-figure">
-               <img src="../images/cordas-violino.jpg" alt="violino instrumento musical" class="instrument-img">
-               <figcaption class="instrument-name">Violino</figcaption>
-            </figure>
-         </article>  
-
-         <article class="characteristics-instrument">   
-            <ul class="list-main">
-               <li class="content-list">É o menor e mais agudo instrumento da família das Cordas.</li>
-               <li class="content-list">Ele foi criado na Itália, na primeira metade do século XVI.</li>
-               <li class="content-list">É o naipe mais numeroso da orquestra.</li>
-               <li class="content-list">Divide em duas vozes, os primeiros e os segundos violinos.</li>
-               <li class="content-list">Os primeiros violinos são a voz melódica, geralmente responsáveis pela realização do tema musical.</li>
-               <li class="content-list">Os segundos violinos ora reforçam a melodia dos primeiros, ora estabelecem o pulso constante em que essas melodias transcorrem.</li>
-            </ul>
-          </article>    
+                <ul class="list-main">
+                  <li class="content-list">É o menor e mais agudo instrumento da família das Cordas.</li>
+                  <li class="content-list">Ele foi criado na Itália, na primeira metade do século XVI.</li>
+                  <li class="content-list">É o naipe mais numeroso da orquestra.</li>
+                  <li class="content-list">Divide em duas vozes, os primeiros e os segundos violinos.</li>
+                  <li class="content-list">Os primeiros violinos são a voz melódica, geralmente responsáveis pela realização do tema musical.</li>
+                  <li class="content-list">Os segundos violinos ora reforçam a melodia dos primeiros,
+                      ora estabelecem o pulso constante em que essas melodias transcorrem.</li>
+                </ul>
+            </article>  
+          </section>
         </section>
 
-        <section class="container-main-information">
-          <article>
-            <figure class="main-article-figure">
-               <img src="../images/cordas-viola.jpg" alt="viola instrumento musical" class="instrument-img">
-               <figcaption class="instrument-name">Viola</figcaption>
-            </figure>
-         </article>  
-
-         <article class="characteristics-instrument">   
-            <ul class="list-main">
-               <li class="content-list">A viola foi o primeiro instrumento a surgir na moderna família das Cordas.</li>
-               <li class="content-list">Nos primórdios da orquestra, ela era o instrumento mais relevante do grupo.</li>
-               <li class="content-list">Sua origem é a mesma do violino e do violoncelo.</li>
-               <li class="content-list">É responsável pelas progressões harmônicas em suporte às melodias mais destacadas.</li>
-               <li class="content-list">Na família das cordas, se a viola cantasse, seria um contralto.</li>
-            </ul>
-          </article> 
+        <section class="swiper-slide">
+            <section class="container-main-information">
+                <article class="characteristics-instrument">    
+                    <figure class="main-article-figure">
+                        <img src="images/cordas-viola.jpg" alt="viola instrumento musical" class="instrument-img">
+                        <figcaption class="instrument-name">Viola</figcaption>
+                    </figure>
+         
+                    <ul class="list-main">
+                      <li class="content-list">A viola foi o primeiro instrumento a surgir na moderna família das Cordas.</li>
+                      <li class="content-list">Nos primórdios da orquestra, ela era o instrumento mais relevante do grupo.</li>
+                      <li class="content-list">Sua origem é a mesma do violino e do violoncelo.</li>
+                      <li class="content-list">É responsável pelas progressões harmônicas em suporte às melodias mais destacadas.</li>
+                      <li class="content-list">Na família das cordas, se a viola cantasse, seria um contralto.</li>
+                    </ul>
+              </article> 
+            </section>
         </section>
 
-        <section class="container-main-information">
-          <article>
-            <figure class="main-article-figure">
-               <img src="../images/cordas-violoncelo.jpg" alt="violoncelo intrumento musical" class="instrument-img">
-               <figcaption class="instrument-name">Violoncelo</figcaption>
-            </figure>
-         </article>  
-
-         <article class="characteristics-instrument">   
-            <ul class="list-main">
-               <li class="content-list">O violoncelo ou cello  surgiu na Itália no início do século XVI, resultado de uma evolução de antigos instrumentos de corda como a viola da gamba.</li>
-               <li class="content-list">No século seguinte, passou a acompanhar composições do período Barroco (1600 a 1750), mas suas reais possibilidades como instrumento solista, com obras criadas especificamente para ele, surgem a partir do século XVIII.</li>
-               <li class="content-list">Consegue cobrir toda a extensão das vozes masculinas e boa parte das femininas, guardando assim uma relação natural com a voz humana.</li>
-               <li class="content-list">É reconhecido pelo alto grau de apelo emocional.</li>
-            </ul>
-          </article>  
+        <section class="swiper-slide">
+          <section class="container-main-information">
+              <article class="characteristics-instrument">  
+                  <figure class="main-article-figure">
+                      <img src="images/cordas-violoncelo.jpg" alt="violoncelo intrumento musical" class="instrument-img">
+                      <figcaption class="instrument-name">Violoncelo</figcaption>
+                  </figure>
+        
+                  <ul class="list-main">
+                     <li class="content-list">O violoncelo ou cello  surgiu na Itália no início do século XVI, 
+                      resultado de uma evolução de antigos instrumentos de corda como a viola da gamba.</li>
+                      <li class="content-list">No século seguinte, passou a acompanhar composições do período Barroco (1600 a 1750),
+                         mas suas reais possibilidades como instrumento solista, com obras criadas especificamente para ele, surgem a partir do século XVIII.</li>
+                      <li class="content-list">Consegue cobrir toda a extensão das vozes masculinas e boa parte das femininas,
+                         guardando assim uma relação natural com a voz humana.</li>
+                      <li class="content-list">É reconhecido pelo alto grau de apelo emocional.</li>
+                  </ul>
+              </article>  
+          </section>
         </section>
 
-        <section class="container-main-information">
-          <article>
-            <figure class="main-article-figure">
-               <img src="../images/cordas-contrabaixo.jpg" alt="contrabaixo instrumento musical" class="instrument-img">
-               <figcaption class="instrument-name">Contrabaixo</figcaption>
-            </figure>
-         </article>  
-
-         <article class="characteristics-instrument">   
-            <ul class="list-main">
-               <li class="content-list">O desenvolvimento do contrabaixo coincide com a evolução da própria história da música, quando a criação de novas harmonias e a introdução de sons mais graves estimularam a busca por instrumentos com registros baixos. </li>
-               <li class="content-list">Surgiu no século XVI, tornando-se frequente em orquestras dois séculos depois. </li>
-               <li class="content-list">Na música sinfônica ele é usado principalmente na sustentação das cordas, sendo tocado com o arco ou pinçando as cordas com os dedos (pizzicato, comum a todos os instrumentos de corda). </li>
-               <li class="content-list">É muito utilizado em outros gêneros de música, como o jazz, canções populares e até o rock. Nestes casos, a técnica do pizzicato é a maneira mais usual de se tocar.</li>
-            </ul>
-          </article>  
+        <section class="swiper-slide">
+            <section class="container-main-information">
+                <article class="characteristics-instrument">    
+                     <figure class="main-article-figure">
+                          <img src="images/cordas-contrabaixo.jpg" alt="contrabaixo instrumento musical" class="instrument-img">
+                          <figcaption class="instrument-name">Contrabaixo</figcaption>
+                      </figure>
+        
+                      <ul class="list-main">
+                          <li class="content-list">O desenvolvimento do contrabaixo coincide com a evolução da própria história da música, 
+                          quando a criação de novas harmonias e a introdução de sons mais graves estimularam a busca por instrumentos com registros baixos. </li>
+                          <li class="content-list">Surgiu no século XVI, tornando-se frequente em orquestras dois séculos depois. </li>
+                          <li class="content-list">Na música sinfônica ele é usado principalmente na sustentação das cordas, 
+                          sendo tocado com o arco ou pinçando as cordas com os dedos (pizzicato, comum a todos os instrumentos de corda). </li>
+                          <li class="content-list">É muito utilizado em outros gêneros de música, como o jazz,
+                          canções populares e até o rock. Nestes casos, a técnica do pizzicato é a maneira mais usual de se tocar.</li>
+                      </ul>
+                </article>  
+            </section>
         </section>
-      </main>
+    </article>
+
+        <div class="swiper-button-prev ac"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+  </main>
 
       <footer>
          <nav class= link-list-medias>
-            <a href="https://twitter.com/?lang=pt-br"><img src="../images/twitter-96.png" class="footer-link-medias"></a>
-            <a href="https://pt-br.facebook.com/login/device-based/regular/login/" ><img src="../images/facebook-100.png" class="footer-link-medias"></a>
-            <a href="https://about.instagram.com/pt-br"><img src="../images/instagram-100.png" class="footer-link-medias"></a>
-            <a href="https://www.youtube.com/"><img src="../images/youtube-96.png" class="footer-link-medias"></a>
-            <a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419"><img src="../images/google-plus-96.png" class="footer-link-medias"></a>
+            <a href="https://twitter.com/?lang=pt-br"><img src="images/twitter-96.png" class="footer-link-medias"></a>
+            <a href="https://pt-br.facebook.com/login/device-based/regular/login/" ><img src="images/facebook-100.png" class="footer-link-medias"></a>
+            <a href="https://about.instagram.com/pt-br"><img src="images/instagram-100.png" class="footer-link-medias"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube-96.png" class="footer-link-medias"></a>
+            <a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419"><img src="images/google-plus-96.png" class="footer-link-medias"></a>
          </nav>
          <figure class="footer-img-contact">
-            <img src="../images/telefone-100.png" class="footer-link-medias">
+            <img src="images/telefone-100.png" class="footer-link-medias">
             <figcaption class="footer-img-description">+55 (31) 3219-0021</figcaption>
          </figure>
          <figure class="footer-img-contact">
-            <img src="../images/envelope-100.png" class="footer-link-medias">
+            <img src="images/envelope-100.png" class="footer-link-medias">
             <figcaption class="footer-img-description">contato@email.art.br</figcaption>
          </figure>
          <figure class="footer-img-contact">
-            <img src="../images/gps-100.png" class="footer-link-medias">
+            <img src="images/gps-100.png" class="footer-link-medias">
             <figcaption class="footer-img-description">Sala Rio grande do Sul - Rua Tenente Couto, 1090 - RS</figcaption>
          </figure>
       </footer>
 
-      <script src="../js/drawer.js"></script>
-      <script src="../js/content-drawer.js"></script>
+      <script src="js/drawer.js"></script>
+      <script src="js/content-drawer.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="js/slider.js"></script>
    </body>
 			
 </html>

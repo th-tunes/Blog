@@ -44,6 +44,7 @@ header {
     height: calc(100% - 68px);
     width: 200px;
     position: fixed;
+    z-index: 80;
     top: 68px;
     right: -200px;
     transition: right 1s;

@@ -1,5 +1,5 @@
 # blog
-> status do projeto: Em andamento
+> status do projeto: Finalizado
 
 Descrição do projeto:
 - Projeto desenvolvido para a disciplina de "Desenvolvimento Web com HTML e CSS" do curso intensivo ("BOOTCAMP") com titulo de  pós-graduação de Desenvolvimento Front-End realizado na instituição de ensino Instituto-Infnet.
