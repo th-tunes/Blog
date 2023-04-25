@@ -25,6 +25,7 @@ header {
     top: 0;
     left: 0;
     padding: 0.625rem;
+    z-index: 60;
 }
 
 /*MENU HAMBURGUER*/
@@ -178,9 +179,7 @@ footer {
 
 /*MEDIA QUERIES*/
 @media (min-width: 1200px) {
-
- 
-  
+    
 .header-nav {
     display: flex;
     flex-direction: row;
@@ -213,17 +212,10 @@ footer {
   }
   
 .instrument-img {
-    width: 300px;
+    width: 200px;
   } 
    
   .content-list {
     font-size: 1rem;
   }
-  
-}
-
-.container {
-  padding: 15px;
-  max-width: 400px;
-  margin: 0 auto;
 }
